@@ -131,9 +131,17 @@
         </a>
         <a class="intro__scroll-button" href="#products">Скролл вниз</a>
         <div class="intro__img">
-          <!-- <picture>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/chip.webp 1x, img/mobile/chip@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/chip.webp 1x, img/tablet/chip@2x.webp 2x">
+            <source type="image/webp" srcset="img/desktop/chip.webp 1x, img/desktop/chip@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/mobile/chip.png 1x, img/mobile/chip@2x.png 2x">
+            <!-- 1x:301px, 2x:602px -->
+            <source media="(max-width: 1023px)" srcset="img/tablet/chip.png 1x, img/tablet/chip@2x.png 2x">
+            <!-- 1x:465px, 2x:930px -->
             <img src="img/desktop/chip.png" srcset="img/desktop/chip@2x.png 2x" width="705" height="515" loading="lazy" alt="Печатная плата">
-          </picture> -->
+            <!-- 1x:705px, 2x:1410px -->
+          </picture>
         </div>
       </div>
     </section>
@@ -183,15 +191,15 @@
             <a class="products__link" href="#">
               <h3 class="products__desc">Производство печатных плат</h3>
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-production.webp 1x, img/mobile/bg-production@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-production.webp 1x, img/mobile/bg-production@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/bg-production.webp 1x, img/tablet/bg-production@2x.webp 2x">
                 <source type="image/webp" srcset="img/desktop/bg-production.webp 1x, img/desktop/bg-production@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/mobile/bg-production.jpg 1x, img/mobile/bg-production@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <!-- <source media="(max-width: 1023px)" srcset="img/tablet/bg-production.jpg 1x, img/tablet/bg-production@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <img class="products__img" src="img/desktop/bg-production.jpg" srcset="img/desktop/bg-production@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Процесс производства печатных плат">
-                <!-- 1x:0px, 2x:0px -->
+                <source media="(max-width: 767px)" srcset="img/mobile/bg-production.jpg 1x, img/mobile/bg-production@2x.jpg 2x">
+                <!-- 1x:290px, 2x:580px -->
+                <source media="(max-width: 1023px)" srcset="img/tablet/bg-production.jpg 1x, img/tablet/bg-production@2x.jpg 2x">
+                <!-- 1x:715px, 2x:1430px -->
+                <img src="img/desktop/bg-production.jpg" srcset="img/desktop/bg-production@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Процесс производства печатных плат">
+                <!-- 1x:370px, 2x:740px -->
               </picture>
               <div class="products__button">
                 <svg width="6" height="9"><use xlink:href="#icon-arrow"></use></svg>
@@ -202,15 +210,15 @@
             <a class="products__link" href="#">
               <h3 class="products__desc">Монтаж печатных плат</h3>
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-installation.webp 1x, img/mobile/bg-installation@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-installation.webp 1x, img/mobile/bg-installation@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/bg-installation.webp 1x, img/tablet/bg-installation@2x.webp 2x">
                 <source type="image/webp" srcset="img/desktop/bg-installation.webp 1x, img/desktop/bg-installation@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/mobile/bg-installation.jpg 1x, img/mobile/bg-installation@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <!-- <source media="(max-width: 1023px)" srcset="img/tablet/bg-installation.jpg 1x, img/tablet/bg-installation@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <img class="products__img" src="img/desktop/bg-installation.jpg" srcset="img/desktop/bg-installation@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Процесс производства печатных плат">
-                <!-- 1x:0px, 2x:0px -->
+                <source media="(max-width: 767px)" srcset="img/mobile/bg-installation.jpg 1x, img/mobile/bg-installation@2x.jpg 2x">
+                <!-- 1x:290px, 2x:580px -->
+                <source media="(max-width: 1023px)" srcset="img/tablet/bg-installation.jpg 1x, img/tablet/bg-installation@2x.jpg 2x">
+                <!-- 1x:715px, 2x:1430px -->
+                <img src="img/desktop/bg-installation.jpg" srcset="img/desktop/bg-installation@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Процесс монтажа печатных плат">
+                <!-- 1x:370px, 2x:740px -->
               </picture>
               <div class="products__button">
                 <svg width="6" height="9"><use xlink:href="#icon-arrow"></use></svg>
@@ -221,15 +229,15 @@
             <a class="products__link" href="#">
               <h3 class="products__desc">Комплектующие для светотехники</h3>
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-accessories.webp 1x, img/mobile/bg-accessories@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/bg-accessories.webp 1x, img/mobile/bg-accessories@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/bg-accessories.webp 1x, img/tablet/bg-accessories@2x.webp 2x">
                 <source type="image/webp" srcset="img/desktop/bg-accessories.webp 1x, img/desktop/bg-accessories@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/mobile/bg-accessories.jpg 1x, img/mobile/bg-accessories@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <!-- <source media="(max-width: 1023px)" srcset="img/tablet/bg-accessories.jpg 1x, img/tablet/bg-accessories@2x.jpg 2x"> -->
-                <!-- 1x:0px, 2x:0px -->
-                <img class="products__img" src="img/desktop/bg-accessories.jpg" srcset="img/desktop/bg-accessories@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Процесс производства печатных плат">
-                <!-- 1x:0px, 2x:0px -->
+                <source media="(max-width: 767px)" srcset="img/mobile/bg-accessories.jpg 1x, img/mobile/bg-accessories@2x.jpg 2x">
+                <!-- 1x:290px, 2x:580px -->
+                <source media="(max-width: 1023px)" srcset="img/tablet/bg-accessories.jpg 1x, img/tablet/bg-accessories@2x.jpg 2x">
+                <!-- 1x:715px, 2x:1430px -->
+                <img src="img/desktop/bg-accessories.jpg" srcset="img/desktop/bg-accessories@2x.jpg 2x" width="370" height="620" loading="lazy" alt="Изображение светодиодной ленты">
+                <!-- 1x:370px, 2x:740px -->
               </picture>
               <div class="products__button">
                 <svg width="6" height="9"><use xlink:href="#icon-arrow"></use></svg>
@@ -242,13 +250,9 @@
 
     <section class="questions" id="questions">
       <div class="questions__wrapper container">
-        <div class="questions__column">
-          <picture>
-            <img class="questions__img" src="img/desktop/paper_airplane.png" srcset="img/desktop/paper_airplane.png 2x" width="511" height="288" loading="lazy" alt="paper_airplane">
-            <!-- 1x:0px, 2x:0px -->
-          </picture>
+        <div class="questions__column questions__column--img">
         </div>
-        <div class="questions__column">
+        <div class="questions__column questions__column--form">
           <form class="form" method="post" action="https://echo.htmlacademy.ru">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
@@ -279,7 +283,7 @@
     </div></section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__block">
       <div class="page-footer__wrapper container page-footer__nav-wrapper">
         <div class="page-footer__social-wrapper">
@@ -330,7 +334,7 @@
         </div>
       </div>
     </div>
-    <div class="page-footer__wrapper container page-footer__copyright">
+    <div class="page-footer__wrapper page-footer__copyright">
       <p class="page-footer__copyright-text">Все права защищены</p>
       <p class="page-footer__copyright-text">1999-2018 SD Service Devices</p>
       <a class="page-footer__copyright-link" href="#">Условия конфиденциальности</a>
