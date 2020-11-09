@@ -253,7 +253,6 @@
 
     <section class="questions" id="questions">
       <div class="questions__wrapper container">
-
         <div class="questions__column">
           <form class="form" method="post" action="https://echo.htmlacademy.ru">
             <h2>Остались вопросы? Задайте их нам!</h2>
@@ -270,7 +269,7 @@
             </div>
             <label class="form__field">
               <span class="visually-hidden">Задайте Ваш вопрос</span>
-              <textarea name="question" cols="30" rows="7" placeholder="Ваш вопрос" required=""></textarea>
+              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required=""></textarea>
             </label>
             <div class="form__block">
               <button class="button questions__button" type="submit">Задать вопрос</button>
@@ -286,32 +285,32 @@
   </main>
 
   <footer class="page-footer container">
-    <div class="page-footer__block">
-      <div class="page-footer__wrapper container page-footer__nav-wrapper">
-        <div class="page-footer__social-wrapper">
-          <a class="logo" aria-label="Логотип Smart Device">
-            <svg class="logo__icon" width="216" height="52"><use xlink:href="#icon-logo-service"></use></svg>
-          </a>
-          <p class="page-footer__text">1999-2018 SD Service Devices</p>
-          <ul class="social">
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в Facebook">
-                <svg width="27" height="27"><use xlink:href="#icon-facebook"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в Одноклассниках">
-                <svg width="27" height="27"><use xlink:href="#icon-ok"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в ВКонтакте">
-                <svg width="27" height="27"><use xlink:href="#icon-vk"></use></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <nav class="nav accordion page-footer__nav">
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__block-social">
+        <a class="logo" aria-label="Логотип Smart Device">
+          <svg class="logo__icon" width="216" height="52"><use xlink:href="#icon-logo-service"></use></svg>
+        </a>
+        <p>1999-2018 SD Service Devices</p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" aria-label="Smart Device в Facebook">
+              <svg width="27" height="27"><use xlink:href="#icon-facebook"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" aria-label="Smart Device в Одноклассниках">
+              <svg width="27" height="27"><use xlink:href="#icon-ok"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" aria-label="Smart Device в ВКонтакте">
+              <svg width="27" height="27"><use xlink:href="#icon-vk"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__block-nav">
+        <nav class="nav accordion">
           <h2 class="nav__header">Разделы сайта</h2>
           <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть разделы сайта"></button>
           <ul class="nav__list accordion__pane">
@@ -335,12 +334,12 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="page-footer__wrapper page-footer__copyright">
-      <p class="page-footer__copyright-text">Все права защищены</p>
-      <p class="page-footer__copyright-text">1999-2018 SD Service Devices</p>
-      <a class="page-footer__copyright-link" href="#">Условия конфиденциальности</a>
-      <a class="page-footer__copyright-link" href="#">Developed by wow studio</a>
+      <div class="page-footer__block-copyrigh">
+        <p>Все права защищены</p>
+        <p>1999-2018 SD Service Devices</p>
+        <a href="#">Условия конфиденциальности</a>
+        <a href="#">Developed by wow studio</a>
+      </div>
     </div>
   </footer>
 
