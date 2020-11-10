@@ -1,13 +1,13 @@
 'use strict';
 (function () {
   // Modal
-  var link = document.querySelector(".page-header__button");
-  var modal = document.querySelector(".modal");
-  var close = modal.querySelector(".modal__close");
-  var form = modal.querySelector(".modal__form");
-  var userName = form.querySelector("[name=username]");
-  var phone = form.querySelector("[name=phone]");
-  var message = form.querySelector("[name=question]");
+  var link = document.querySelector('.page-header__button');
+  var modal = document.querySelector('.modal');
+  var close = modal.querySelector('.modal__close');
+  var form = modal.querySelector('.modal__form');
+  var userName = form.querySelector('[name=username]');
+  var phone = form.querySelector('[name=phone]');
+  var message = form.querySelector('[name=question]');
   var isStorageSupport = true;
   var storage = {};
 
@@ -57,7 +57,7 @@
   });
 
   window.addEventListener('keydown', function (evt) {
-    if (evt.key === "Escape") {
+    if (evt.key === 'Escape') {
       evt.preventDefault();
       if (modal.classList.contains('modal--show')) {
         closeModal();
@@ -73,14 +73,14 @@
 
   // Phone mask
   // eslint-disable-next-line no-undef
-  var inputMask = new Inputmask("+7 (999) 999-99-99", {
+  var inputMask = new Inputmask('+7 (999) 999-99-99', {
     oncomplete: function () {
-      phone.setCustomValidity("");
+      phone.setCustomValidity('');
     }
   });
 
-  phone.addEventListener("input", function () {
-    phone.setCustomValidity("Введите корректный номер телефона");
+  phone.addEventListener('input', function () {
+    phone.setCustomValidity('Введите корректный номер телефона');
   });
   inputMask.mask(phone);
 
@@ -116,5 +116,3 @@
     accordionToggleButton.addEventListener('click', toggleAccordion);
   });
 })();
-
-
