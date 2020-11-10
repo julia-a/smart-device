@@ -115,4 +115,31 @@
     hidePane(accordionToggleButton, accordionPane);
     accordionToggleButton.addEventListener('click', toggleAccordion);
   });
+
+  // плавная прокрутка к якорю
+  var linkNav = document.querySelectorAll('[href^="#"]');
+  var V = 1;
+  for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var w = window.pageYOffset;
+      var hash = evt.currentTarget.href.replace(/[^#]*(.*)/, '$1');
+      var t = document.querySelector(hash).getBoundingClientRect().top;
+      var start = null;
+      requestAnimationFrame(step);
+      function step(time) {
+        if (start === null) {
+          start = time;
+        }
+        var progress = time - start;
+        var r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+        window.scrollTo(0, r);
+        if (r !== w + t) {
+          requestAnimationFrame(step);
+        } else {
+          location.hash = hash;
+        }
+      }
+    }, false);
+  }
 })();
