@@ -1,0 +1,36 @@
+.social {
+  @include list-reset;
+
+  display: flex;
+  margin-top: 45px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: -3px;
+  }
+}
+
+.social__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: -10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 16px;
+  }
+}
+
+.social__item a {
+  @include interactive-element;
+
+  display: flex;
+}

@@ -1,0 +1,140 @@
+.about {
+  @include container-desktop-tight;
+
+  position: relative;
+
+  margin-top: 75px;
+  margin-bottom: 110px;
+  padding-left: 205px;
+  padding-right: 30px;
+
+  color: $grey-100;
+
+  h2 {
+    margin: 0;
+
+    font-family: $roboto-condensed;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 51px;
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 28px;
+
+    width: 115px;
+    height: 305px;
+
+    background-image: url("../img/desktop/2005.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115px 305px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/desktop/2005@2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: -20px;
+    margin-bottom: 82px;
+    padding-left: 212px;
+
+    h2 {
+      margin-left: -2px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    p {
+      margin-top: 26px;
+      margin-bottom: 18px;
+    }
+
+    &::before {
+      top: 8px;
+      left: 28px;
+
+      width: 131px;
+      height: 347px;
+
+      background-image: url("../img/tablet/2005.png");
+      background-size: 131px 347px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/tablet/2005@2x.png");
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: -10px;
+    margin-bottom: 65px;
+    padding-left: 15px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      margin-top: 19px;
+      margin-bottom: 28px;
+
+      span {
+        margin-top: 40px;
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.about__text {
+  display: block;
+  margin-top: 20px;
+
+  &--tablet {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+.about__button {
+  display: block;
+  width: 180px;
+
+  color: $blue-100;
+
+  background-color: $white;
+  border: 1px solid $blue-100;
+
+  &:hover {
+    color: $white;
+
+    background-color: $blue-100;
+  }
+}

@@ -1,0 +1,26 @@
+// Normalize
+@import "global/normalize.scss";
+
+// Variables
+@import "global/variables.scss";
+
+// Mixins
+@import "global/mixins.scss";
+
+// Layout settings
+@import "global/scaffolding.scss";
+@import "global/container.scss";
+
+// Blocks. Common
+@import "blocks/common/logo.scss";
+@import "blocks/common/button.scss";
+
+// Blocks. Index
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/about.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/nav.scss";
+@import "blocks/contacts.scss";

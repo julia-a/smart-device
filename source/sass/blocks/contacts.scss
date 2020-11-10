@@ -1,0 +1,33 @@
+.contacts {
+  @media (max-width: $mobile-width) {
+    @include container-desktop-wide;
+
+    position: relative;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    border-top: 1px solid $grey-300;
+  }
+}
+
+.contacts__list {
+  @include list-reset;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+}
+
+.contacts__item {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__link {
+  @include interactive-element;
+}

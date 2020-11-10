@@ -1,0 +1,15 @@
+.logo__icon {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--smart {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+  }
+}

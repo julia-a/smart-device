@@ -1,0 +1,25 @@
+// Breakpoints
+$tablet-width: 1023px;
+$mobile-width: 767px;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$black-100: #1b2d37;
+$black-200: rgba(0, 0, 0, 0.5);
+$grey-100: #666666;
+$grey-200: #788891;
+$grey-150:rgba(27, 45, 55, 0.8);
+$grey-170:rgba(27, 45, 55, 0.5);
+$grey-300: rgba(98, 105, 98, 0.2);
+$grey-400: #ebebeb;
+$blue-100: #00b2ff;
+$blue-200: #19baff;
+
+// Fonts
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$pt-mono: "PT Mono", "Courier New", monospace;
