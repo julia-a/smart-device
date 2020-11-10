@@ -116,9 +116,9 @@
     accordionToggleButton.addEventListener('click', toggleAccordion);
   });
 
-  // плавная прокрутка к якорю
+  // Scrolling
   var linkNav = document.querySelectorAll('[href^="#"]');
-  var V = 1;
+  var V = 0.5;
   for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function (evt) {
       evt.preventDefault();

@@ -171,7 +171,7 @@
       </ul>
     </section>
 
-    <section class="about container">
+    <section class="about container" id="about">
       <h2 class="about__title">О компании</h2>
       <p>
         Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
@@ -185,11 +185,11 @@
       <a class="button about__button" href="#">Подробнее</a>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="products__wrapper container">
         <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
         <ul class="products__list">
-          <li class="products__item">
+          <li class="products__item" id="production">
             <a class="products__link" href="#">
               <h3 class="products__desc">Производство печатных плат</h3>
               <picture>
@@ -208,7 +208,7 @@
               </div>
             </a>
           </li>
-          <li class="products__item">
+          <li class="products__item" id="installation">
             <a class="products__link" href="#">
               <h3 class="products__desc">Монтаж печатных плат</h3>
               <picture>
@@ -227,7 +227,7 @@
               </div>
             </a>
           </li>
-          <li class="products__item">
+          <li class="products__item" id="accessories">
             <a class="products__link" href="#">
               <h3 class="products__desc products__desc--accessories">Комплектующие для светотехники</h3>
               <picture>
@@ -314,16 +314,16 @@
             <h2 class="nav__header">Разделы сайта</h2>
             <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть разделы сайта"></button>
             <ul class="nav__list accordion__pane">
-              <li class="nav__item"><a href="#" class="nav__link">О компании</a> </li>
-              <li class="nav__item"><a href="#" class="nav__link">Продукты</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Производство печатных плат</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Монтаж печатных плат</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Комплектующие</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#about">О компании</a> </li>
+              <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#production">Производство печатных плат</a></li>
+              <li class="nav__item"><a class="nav__link" href="#installation">Монтаж печатных плат</a></li>
+              <li class="nav__item"><a class="nav__link" href="#accessories">Комплектующие</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+              <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
-          <div class="contacts accordion">
+          <div class="contacts accordion" id="contacts">
             <h2 class="contacts__header">Наш офис</h2>
             <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть контактную информацию"></button>
             <ul class="contacts__list accordion__pane">
