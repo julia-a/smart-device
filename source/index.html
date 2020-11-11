@@ -1,176 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Smart Device, Печатные платы, Производство плат, Монтаж плат">
-  <meta name="description" content="Официальный сайт компании Smart Device">
+  <meta name="keywords" content="Smart Device, Service Device, Печатные платы, Производство плат, Монтаж плат">
+  <meta name="description" content="Официальный сайт компании 'Smart Device'.">
   <meta name="author" content="WoW Studio">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device - Умные технологии</title>
-  <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
-  <link rel="preload" href="fonts/PT-Mono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-  <!-- Sprite -->
-  <div style="display:none">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
-
   <header class="page-header">
-    <div class="page-header__wrapper container">
+    <div class="page-header__wrapper wrapper">
       <h1 class="visually-hidden">Smart Device - Умные технологии</h1>
-      <a class="logo" aria-label="Логотип Smart Device">
-        <svg class="logo__icon logo__icon--smart" width="202" height="52"><use xlink:href="#icon-logo-smart"></use></svg>
-        <svg class="logo__icon logo__icon--mobile" width="38" height="38"><use xlink:href="#icon-logo-mobile"></use></svg>
+      <a class="page-header__logo-link" aria-label="Логотип 'Smart Device'">
+        <svg class="page-header__logo page-header__logo--desktop" width="202" height="52">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-smart-device"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--mobile" width="38" height="38">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-smart-device-mobile"></use>
+        </svg>
       </a>
-      <ul class="page-header__contacts">
-        <li class="page-header__contacts-item">
-          <a class="page-header__contacts-link" href="mailto:info@sd.ru" aria-label="Напишите нам">
-            <svg class="page-header__icon-envelope" width="19" height="14"><use xlink:href="#icon-envelope"></use></svg>
-            <span>info@sd.ru</span>
-          </a>
+      <ul class="page-header__contacts-list">
+        <li class="page-header__contacts-item page-header__contacts-item--mail">
+          <a href="mailto:info@sd.ru" aria-label="Напишите нам">info@sd.ru</a>
         </li>
-        <li class="page-header__contacts-item">
-          <a class="page-header__contacts-link" href="tel:+74950005252" aria-label="Позвоните нам">
-            <svg class="page-header__icon-phone" width="18" height="18"><use xlink:href="#icon-phone"></use></svg>
-            <span>+7 (495) 000 52 52</span>
-          </a>
+        <li class="page-header__contacts-item page-header__contacts-item--phone">
+          <a href="tel:+74950005252" aria-label="Позвоните нам">+7 (495) 000 52 52</a>
+        </li>
+        <li class="page-header__contacts-item page-header__contacts-item--call">
+          <a class="page-header__contacts-button button" href="#">Заказать звонок</a>
         </li>
       </ul>
-      <a class="button page-header__button" href="#">Заказать звонок</a>
     </div>
   </header>
-
   <main class="page-main">
     <section class="intro">
-      <div class="intro__wrapper container">
-        <h2 class="intro__title">Печатные платы</h2>
-        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button intro__button" href="#questions">
+      <div class="intro__wrapper wrapper">
+        <h2 class="intro__header">Печатные платы</h2>
+        <p class="intro__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="intro__button button" href="#ask-us">
           <span class="intro__button-text intro__button-text--desktop">Получить бесплатную консультацию</span>
           <span class="intro__button-text intro__button-text--mobile">Бесплатная консультация</span>
         </a>
-        <a class="intro__scroll-button" href="#advantages">Скролл вниз</a>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/chip.webp 1x, img/mobile/chip@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet/chip.webp 1x, img/tablet/chip@2x.webp 2x">
-          <source type="image/webp" srcset="img/desktop/chip.webp 1x, img/desktop/chip@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/mobile/chip.png 1x, img/mobile/chip@2x.png 2x">
-          <!-- 1x:301px, 2x:602px -->
-          <source media="(max-width: 1023px)" srcset="img/tablet/chip.png 1x, img/tablet/chip@2x.png 2x">
-          <!-- 1x:465px, 2x:930px -->
-          <img class="intro__img" src="img/desktop/chip.png" srcset="img/desktop/chip@2x.png 2x" width="705" height="515" loading="lazy" alt="Печатная плата">
-          <!-- 1x:705px, 2x:1410px -->
-        </picture>
+        <a href="#advantages" class="intro__scroll-button">Скролл вниз</a>
       </div>
     </section>
-
-    <section class="advantages container" id="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <svg class="advantages__icon advantages__icon--time" width="29" height="35"><use xlink:href="#icon-time"></use></svg>
-          <h3>Оперативные сроки</h3>
-          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
-          </p>
-        </li>
-        <li class="advantages__item">
-          <svg class="advantages__icon advantages__icon--suppliers" width="35" height="35"><use xlink:href="#icon-suppliers"></use></svg>
-          <h3>Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <svg class="advantages__icon advantages__icon--confidentiality" width="36" height="31"><use xlink:href="#icon-confidentiality"></use></svg>
-          <h3>Полная конфиденциальность</h3>
-          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-        </li>
-        <li class="advantages__item">
-          <svg class="advantages__icon advantages__icon--price" width="35" height="35"><use xlink:href="#icon-price"></use></svg>
-          <h3>Персонализация стоимости</h3>
-          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-        </li>
-      </ul>
+    <div class="info">
+      <section class="advantages wrapper" id="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg fill="none" height="35" width="29" xmlns="http://www.w3.org/2000/svg"><g><path d="M3.188 11.662L1.702 10.19a2.038 2.038 0 010-2.9c.807-.8 2.122-.8 2.929 0l1.587 1.572a14.58 14.58 0 015.52-2.311V4.51h-1.38a.687.687 0 01-.691-.683V2.051C9.667.92 10.596 0 11.738 0h5.524c1.142 0 2.071.92 2.071 2.05v1.778a.687.687 0 01-.69.684h-1.381V6.55a14.578 14.578 0 015.52 2.31l1.587-1.57c.807-.8 2.121-.8 2.93 0a2.04 2.04 0 010 2.9l-1.487 1.471A14.252 14.252 0 0129 20.644C29 28.56 22.495 35 14.5 35S0 28.56 0 20.645c0-3.277 1.128-6.442 3.188-8.983zm.467-3.405a.696.696 0 00-.977 0 .68.68 0 000 .967l1.427 1.412c.322-.327.659-.638 1.01-.934zm14.297-6.206a.688.688 0 00-.69-.684h-5.524c-.38 0-.69.307-.69.684v1.094h6.904zM13.12 4.51v1.843a15.006 15.006 0 012.762 0V4.512zm13.203 3.746a.696.696 0 00-.977 0l-1.46 1.445c.351.296.688.607 1.01.934l1.427-1.412a.68.68 0 000-.967zM14.5 33.633c7.234 0 13.119-5.827 13.119-12.989 0-3.159-1.158-6.202-3.262-8.57A13.177 13.177 0 0014.5 7.656a13.18 13.18 0 00-7.936 2.645 13.19 13.19 0 00-1.921 1.771 12.898 12.898 0 00-3.262 8.572c0 7.161 5.885 12.988 13.119 12.988z"/><path d="M14.5 22.695a2.063 2.063 0 01-2.071-2.05c0-.891.577-1.651 1.38-1.934V13.81c0-.378.31-.684.691-.684s.69.306.69.684v4.902a2.056 2.056 0 011.382 1.934c0 1.13-.93 2.05-2.072 2.05zm0-2.734c-.38 0-.69.307-.69.684 0 .377.31.683.69.683s.69-.306.69-.684a.688.688 0 00-.69-.683z"/><path d="M7.145 13.433a.54.54 0 01.033-.037l.04-.037a10.417 10.417 0 014.353-2.55.682.682 0 11.391 1.311 9.028 9.028 0 00-3.298 1.78l.466.46c.27.268.27.7 0 .968a.692.692 0 01-.977 0l-.467-.462A8.758 8.758 0 005.55 19.96h.664c.382 0 .69.306.69.684a.686.686 0 01-.69.683H5.55a8.757 8.757 0 002.136 5.095l.467-.462a.696.696 0 01.977 0c.27.267.27.7 0 .967l-.467.462a8.941 8.941 0 005.147 2.115v-.657c0-.378.309-.684.69-.684.381 0 .69.306.69.684v.657a8.939 8.939 0 005.147-2.115l-.467-.462a.679.679 0 010-.967.696.696 0 01.977 0l.467.462a8.758 8.758 0 002.136-5.095h-.664c-.382 0-.69-.306-.69-.684s.308-.683.69-.683h.664a8.758 8.758 0 00-2.136-5.095l-.467.462a.692.692 0 01-.977 0 .68.68 0 010-.967l.466-.461a9.024 9.024 0 00-3.298-1.78.684.684 0 11.391-1.312 10.414 10.414 0 014.351 2.55.672.672 0 01.042.037l.033.037a10.132 10.132 0 013.002 7.213c0 2.718-1.066 5.277-3.001 7.211a.555.555 0 01-.034.037.38.38 0 01-.037.033 10.34 10.34 0 01-7.285 2.972c-2.746 0-5.33-1.055-7.284-2.971l-.038-.034c-.012-.011-.022-.024-.033-.036a10.132 10.132 0 01-3.002-7.212 10.13 10.13 0 013.002-7.212z"/><path d="M14.5 11.758c-.381 0-.69-.306-.69-.684s.309-.683.69-.683c.381 0 .69.306.69.683s-.309.684-.69.684z"/></g></svg>
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+              производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="advantages__item">
+            <svg fill="none" height="35" width="35" xmlns="http://www.w3.org/2000/svg"><g><path d="M31.264 27.893a3.132 3.132 0 00.597-1.842v-4.108a.684.684 0 00-.684-.683h-3.055a2.564 2.564 0 00-2.561 2.561v2.23c0 .687.222 1.323.596 1.841a4.402 4.402 0 00-1.336.445 5.817 5.817 0 00-4.294-2.56l-.021-.005a4.02 4.02 0 001.03-2.69V17.5a.684.684 0 00-.684-.684H16.7a3.24 3.24 0 00-3.236 3.236v3.03a4.02 4.02 0 001.03 2.69l-.021.005a5.816 5.816 0 00-4.294 2.56c-.42-.22-.87-.369-1.337-.445a3.132 3.132 0 00.597-1.84v-4.109a.684.684 0 00-.684-.683H5.7a2.564 2.564 0 00-2.56 2.561v2.23c0 .688.221 1.324.596 1.842A4.464 4.464 0 000 32.291v2.025c0 .378.306.684.684.684h33.632a.684.684 0 00.684-.684v-2.025a4.464 4.464 0 00-3.736-4.398zM4.506 23.821c0-.658.536-1.194 1.194-1.194h2.372v.833a.74.74 0 01-.74.74H4.506zm0 1.746h2.826c.26 0 .51-.048.74-.135v.62c0 .982-.8 1.782-1.783 1.782-.983 0-1.783-.8-1.783-1.783zm2.224 3.634l-.44.44-.442-.44zm2.468 2.363v2.069h-7.83V32.29a3.095 3.095 0 012.588-3.049l1.85 1.85a.684.684 0 00.966 0l1.85-1.85c.327.053.642.158.934.312a5.784 5.784 0 00-.358 2.01zm8.302-5.813a2.672 2.672 0 01-2.668-2.668v-.904h4.085c.453 0 .88-.115 1.252-.319v1.223a2.672 2.672 0 01-2.669 2.669zm1.192 1.368L17.5 28.31l-1.192-1.191zm-3.86-7.067a1.87 1.87 0 011.868-1.868h3.469v1.377c0 .69-.562 1.251-1.252 1.251H14.83zm9.603 13.58h-13.87v-1.366h4.451a.684.684 0 100-1.368h-4.4a4.455 4.455 0 013.8-3.738l2.6 2.6a.682.682 0 00.967 0l2.601-2.6a4.451 4.451 0 013.85 4.404zm2.493-9.81c0-.66.536-1.195 1.194-1.195h2.372v.833a.74.74 0 01-.74.74h-2.826zm0 1.745h2.826c.26 0 .51-.048.74-.135v.62c0 .982-.8 1.782-1.783 1.782-.983 0-1.783-.8-1.783-1.783zm2.224 3.634l-.441.44-.44-.44zm-3.35 4.432v-2.069c0-.706-.127-1.383-.358-2.01.292-.154.606-.26.933-.312l1.85 1.85a.684.684 0 00.967 0l1.85-1.85a3.095 3.095 0 012.589 3.05v1.34zM20.869 4.466a.684.684 0 00-.967 0l-3.354 3.355-1.45-1.45a.684.684 0 10-.967.967l1.933 1.933a.684.684 0 00.967 0l3.838-3.838a.684.684 0 000-.967z"/><path d="M20.295.593a.684.684 0 00-.557 1.248 5.51 5.51 0 013.264 5.028A5.508 5.508 0 0117.5 12.37a5.508 5.508 0 01-5.501-5.501 5.515 5.515 0 013.24-5.017.683.683 0 10-.563-1.246 6.885 6.885 0 00-4.045 6.263 6.877 6.877 0 006.869 6.868 6.876 6.876 0 006.869-6.868A6.88 6.88 0 0020.295.593z"/><path d="M17.524 0H17.5a.684.684 0 000 1.367h.021A.684.684 0 0017.524 0zm.459 31.099c-.127-.127-.303-.2-.483-.2s-.356.073-.483.2-.2.303-.2.483a.688.688 0 00.683.684.688.688 0 00.684-.684.689.689 0 00-.2-.483z"/></g></svg>
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+              HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <svg fill="none" height="31" width="36" xmlns="http://www.w3.org/2000/svg"><g><path d="M18 9.758a.706.706 0 00-.703.708c0 .391.315.708.703.708s.703-.317.703-.708A.706.706 0 0018 9.758z"/><path d="M33.89 14.007h-2.735C29.712 9.859 27.62 2.587 23.829.53c-1.896-1.028-3.688-.31-4.362 1.148A1.59 1.59 0 0118 2.625a1.59 1.59 0 01-1.467-.946C15.883.27 14.133-.514 12.304.38 8.453 2.264 6.3 9.828 4.845 14.007H2.11c-1.166 0-2.11.95-2.11 2.123a2.12 2.12 0 002.11 2.124h31.78c1.166 0 2.11-.95 2.11-2.124a2.12 2.12 0 00-2.11-2.124zM7.316 11.174h7.872a.706.706 0 00.704-.708.706.706 0 00-.704-.708h-7.38c2.12-5.896 4.1-7.609 5.111-8.104 1.104-.54 2.013-.088 2.34.622A2.996 2.996 0 0018 4.041a2.996 2.996 0 002.742-1.765c.337-.73 1.25-1.134 2.42-.5 1.016.552 2.99 2.322 5.03 7.982h-7.38c-.388 0-.703.317-.703.708s.315.708.703.708h7.873c.355 1.033.725 2.098.98 2.833H6.335c.255-.733.623-1.796.98-2.833zm26.576 5.665H2.109a.706.706 0 01-.703-.708c0-.391.315-.708.703-.708h31.782c.387 0 .703.317.703.708 0 .39-.315.708-.703.708zm-17.298 4.248H5.344a.705.705 0 00-.703.708v2.832C4.64 28.141 7.479 31 10.969 31a6.316 6.316 0 005.915-4.105 2.681 2.681 0 012.233 0A6.315 6.315 0 0025.03 31c3.49 0 6.328-2.859 6.328-6.373v-2.832a.706.706 0 00-.703-.708h-11.25a.706.706 0 00-.703.708v.708h-1.406v-.708a.705.705 0 00-.703-.708zm-5.625 8.497c-2.714 0-4.922-2.224-4.922-4.957v-2.124h9.844v2.124c0 2.74-2.196 4.957-4.922 4.957zm9.14-7.08h9.844v2.123c0 2.733-2.208 4.957-4.922 4.957-2.732 0-4.922-2.223-4.922-4.957zm-1.406 1.415v.708c0 .227.013.452.036.676a4.08 4.08 0 00-1.478 0c.023-.224.036-.45.036-.676v-.708z"/><path d="M10.969 26.752a2.12 2.12 0 01-2.11-2.125c0-.39-.314-.708-.703-.708s-.703.317-.703.708c0 1.952 1.577 3.54 3.516 3.54a.706.706 0 00.703-.707.706.706 0 00-.703-.708zm14.062 1.416c1.939 0 3.516-1.589 3.516-3.54a.706.706 0 00-.703-.709.706.706 0 00-.703.708 2.12 2.12 0 01-2.11 2.125.706.706 0 00-.703.708c0 .39.315.708.703.708z"/></g></svg>
+            <h3>Полная с</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="advantages__item">
+            <svg fill="none" height="35" width="35" xmlns="http://www.w3.org/2000/svg"><g><path d="M11.07 8.585a.686.686 0 00-.966 0 .69.69 0 00-.2.483.685.685 0 001.367 0 .689.689 0 00-.2-.483z"/><path d="M34.8 2.859l-.845-.847.845-.845A.684.684 0 0033.833.2l-.845.845-.832-.834a.683.683 0 00-.484-.2L20.102.003H20.1c-.913 0-1.772.356-2.418 1.002L11.908 6.78a.684.684 0 00.967.967l5.774-5.774A2.04 2.04 0 0120.1 1.37h.002l11.286.007.634.634-2.537 2.537a2.805 2.805 0 00-3.419.422c-.529.529-.82 1.232-.82 1.98s.291 1.452.82 1.98a2.792 2.792 0 001.98.82c.717 0 1.434-.273 1.98-.82a2.806 2.806 0 00.425-3.415l2.537-2.537.645.646-.007 11.273a2.04 2.04 0 01-.601 1.451L16.344 33.033a2.04 2.04 0 01-1.452.601 2.04 2.04 0 01-1.452-.601L1.97 21.559c-.388-.387-.602-.903-.602-1.452s.214-1.064.602-1.452l7.368-7.37a.684.684 0 00-.966-.966L1 17.689c-.643.644-1 1.504-1 2.417s.356 1.773 1.002 2.42L12.473 34a3.41 3.41 0 002.419 1 3.41 3.41 0 002.419-1l16.68-16.684a3.4 3.4 0 001.003-2.417L35 3.342a.683.683 0 00-.2-.483zm-5.74 5.106c-.271.27-.631.42-1.014.42s-.742-.15-1.013-.42a1.435 1.435 0 011.013-2.447c.138 0 .277.02.41.06l-.789.789a.684.684 0 00.967.967l.787-.787a1.434 1.434 0 01-.361 1.418z"/><path d="M29.2 13.764l-7.966-7.967a2.71 2.71 0 00-3.828 0L4.8 18.406c-.511.51-.793 1.19-.793 1.914s.282 1.403.793 1.914l7.967 7.968c.511.51 1.19.793 1.914.793a2.69 2.69 0 001.913-.793L29.2 17.592a2.69 2.69 0 00.793-1.913 2.69 2.69 0 00-.793-1.914zm-.966 2.862L15.627 29.235a1.33 1.33 0 01-.947.392 1.33 1.33 0 01-.947-.392l-7.967-7.968a1.33 1.33 0 01-.392-.947c0-.358.139-.695.392-.948L18.373 6.764c.261-.262.604-.392.947-.392s.686.13.947.392l7.967 7.967c.253.253.392.59.392.948s-.14.694-.392.947z"/><path d="M22.29 13.677a.684.684 0 00-.966-.967l-.394.394c-1.051-.65-2.4-.562-3.252.29a2.48 2.48 0 00-.716 1.9c.034.704.337 1.376.853 1.892.55.55.611 1.384.137 1.859-.475.474-1.308.413-1.858-.137s-.612-1.384-.137-1.859a.684.684 0 00-.967-.967c-.853.853-.94 2.202-.29 3.253l-.468.467a.684.684 0 00.968.967l.467-.467c.46.283.975.427 1.482.427.652 0 1.29-.238 1.77-.718 1.007-1.007.946-2.708-.137-3.791a1.512 1.512 0 01-.454-.991 1.13 1.13 0 01.317-.868c.474-.475 1.308-.413 1.858.137s.611 1.384.137 1.858a.684.684 0 00.966.967c.853-.852.94-2.201.29-3.252zm-6.918 11.335L11.86 21.5a.684.684 0 00-.967.967l3.511 3.512a.682.682 0 00.967 0 .684.684 0 000-.967zm-5.384-5.385a.688.688 0 00-.483-.2.69.69 0 00-.483.2.69.69 0 00-.2.484.684.684 0 00.683.683.688.688 0 00.684-.683.689.689 0 00-.2-.484z"/></g></svg>
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить
+              ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us wrapper">
+        <h2 class="about-us__header">О компании</h2>
+        <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+        </p>
+        <p class="about-us__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+          HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+          Железных Дорог<span class="about-us__responsive-text about-us__responsive-text--tablet">..</span> <span
+            class="about-us__responsive-text about-us__responsive-text--desktop">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
+            МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+        <a href="#" class="about-us__button button">Подробнее</a>
+      </section>
+    </div>
+    <section class="products">
+      <div class="products__wrapper wrapper">
+        <h2 class="products__header">Service Device предлагает следующие товары и услуги</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <a href="#" class="products__link products__link--production">
+              <picture>
+                <source type="image/webp" srcset="img/bg-products-production-desktop@1x.webp 1x, img/bg-products-production-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-production-desktop@1x.jpg" srcset="img/bg-products-production-desktop@2x.jpg 2x" alt="Процесс производства печатных плат">
+              </picture>
+              <h3 class="products__link-text">Производство печатных плат</h3>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__link products__link--installation">
+              <picture>
+                <source type="image/webp" srcset="img/bg-products-installation-desktop@1x.webp 1x, img/bg-products-installation-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-installation-desktop@1x.jpg" srcset="img/bg-products-installation-desktop@2x.jpg 2x" alt="Процесс монтажа печатных плат">
+              </picture>
+              <h3 class="products__link-text">Монтаж печатных плат</h3>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="products__link products__link--accessories">
+              <picture>
+                <source type="image/webp" srcset="img/bg-products-accessories-desktop@1x.webp 1x, img/bg-products-accessories-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-accessories-desktop@1x.jpg" srcset="img/bg-products-accessories-desktop@2x.jpg 2x" width="370" height="620" alt="Изображение светодиодной ленты">
+              </picture>
+              <h3 class="products__link-text">Комплектующие для светотехники</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-
-    <section class="about container" id="about">
-      <h2 class="about__title">О компании</h2>
-      <p>
-        Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-        <span class="about__text about__text--desktop">
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-        </span>
-        <span class="about__text about__text--tablet">
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..
-        </span>
-      </p>
-      <a class="button about__button" href="#">Подробнее</a>
+    <section class="ask-us" id="ask-us">
+      <h2 class="visually-hidden">Бесплатная консультация</h2>
+      <div class="ask-us__wrapper wrapper">
+        <div class="ask-us__wrapper-column">
+          <h3 class="ask-us__header">Остались вопросы? Задайте их нам!</h3>
+          <b class="ask-us__header-desc">Мы проконсультируем Вас бесплатно</b>
+          <form class="ask-us__form form" method="POST">
+            <label class="visually-hidden" for="ask-us-name">Введите Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя" id="ask-us-name" required>
+            <label class="visually-hidden" for="ask-us-phone">Введите Ваш номер телефона:</label>
+            <input type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
+            <label class="visually-hidden" for="ask-us-question">Введите Ваш вопрос:</label>
+            <textarea name="question" cols="30" rows="6"
+                placeholder="Ваш вопрос" id="ask-us-question" required></textarea>
+            <button class="button" type="submit">Задать вопрос</button>
+            <label class="form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="agreement" required>
+              <span class=""></span>
+              Я согласен на обработку персональных данных
+            </label>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer class="page-footer container">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__block-main container">
-        <div class="page-footer__block-social">
-          <a class="logo" aria-label="Логотип Smart Device">
-            <svg class="logo__icon" width="216" height="52"><use xlink:href="#icon-logo-service"></use></svg>
-          </a>
-          <p>1999-2018 SD Service Devices</p>
-          <ul class="social">
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в Facebook">
-                <svg width="27" height="27"><use xlink:href="#icon-facebook"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в Одноклассниках">
-                <svg width="27" height="27"><use xlink:href="#icon-ok"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Smart Device в ВКонтакте">
-                <svg width="27" height="27"><use xlink:href="#icon-vk"></use></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__block-nav">
-          <nav class="nav accordion">
-            <h2 class="nav__header">Разделы сайта</h2>
-            <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть разделы сайта"></button>
-            <ul class="nav__list accordion__pane">
-              <li class="nav__item"><a class="nav__link" href="#about">О компании</a> </li>
-              <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
-              <li class="nav__item"><a class="nav__link" href="#production">Производство печатных плат</a></li>
-              <li class="nav__item"><a class="nav__link" href="#installation">Монтаж печатных плат</a></li>
-              <li class="nav__item"><a class="nav__link" href="#accessories">Комплектующие</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
-              <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="contacts accordion" id="contacts">
-            <h2 class="contacts__header">Наш офис</h2>
-            <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть контактную информацию"></button>
-            <ul class="contacts__list accordion__pane">
-              <li class="contacts__item"><address class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</address></li>
-              <li class="contacts__item"><a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
-              <li class="contacts__item"><a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
-              <li class="contacts__item"><a class="contacts__link" href="tel:+792692608079">+7 (926) 926-080-79</a></li>
-            </ul>
-          </div>
-        </div>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper wrapper">
+      <div class="page-footer__base">
+        <a class="page-footer__logo-link" aria-label="Логотип 'Service Device'">
+          <svg class="page-footer__logo page-footer__logo--desktop" width="226" height="52">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-service-device"></use>
+          </svg>
+        </a>
+        <b class="page-footer__years-of-service">1999-2018 SD Service Devices</b>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--odnoklassniki" href="#">Мы в Одноклассниках</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Мы в ВКонтакте</a>
+          </li>
+        </ul>
       </div>
-      <div class="page-footer__block-copyrigh container">
-        <p>Все права защищены</p>
-        <p>1999-2018 SD Service Devices</p>
-        <a href="#">Условия конфиденциальности</a>
-        <a href="#">Developed by wow studio</a>
+      <div class="page-footer__nav nav accordion">
+        <div class="nav__heading-block">
+          <h2 class="nav__header">Разделы сайта</h2>
+          <button class="nav__toggle accordion__toggle" type="button"><span class="visually-hidden">Показать/Спрятать разделы сайта</span></button>
+        </div>
+        <ul class="nav__list accordion__pane">
+          <li class="nav__item"><a href="#" class="nav__link">О компании</a> </li>
+          <li class="nav__item"><a href="#" class="nav__link">Комплектующие</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Продукты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Производство печатных плат</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Монтаж печатных плат</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__contacts contacts accordion">
+        <div class="contacts__heading-block">
+          <h2 class="contacts__header">Наш офис</h2>
+          <button class="contacts__toggle accordion__toggle" type="button"><span class="visually-hidden">Показать/Спрятать контактную информацию</span></button>
+        </div>
+        <ul class="contacts__list accordion__pane">
+          <li class="contacts__item"><span class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</span></li>
+          <li class="contacts__item"><a href="tel:+74955894050" class="contacts__link">+7 (495) 589-40-50</a></li>
+          <li class="contacts__item"><a href="tel:+79250038767" class="contacts__link">+7 (925) 003-87-67</a></li>
+          <li class="contacts__item"><a href="tel:+792692608079" class="contacts__link">+7 (926) 926-080-79</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <div class="copyright__block wrapper">
+        <span class="copyright__item copyright__item--secure">
+          <b class="copyright__text">Все права защищены</b>
+        </span>
+        <span class="copyright__item copyright__item--service">
+          <b class="copyright__text">1999-2018 SD Service Devices</b>
+        </span>
+        <span class="copyright__item copyright__item--confidence">
+          <a class="copyright__link" href="#">Условия конфиденциальности</a>
+        </span>
+        <span class="copyright__item copyright__item--dev-by">
+          <a class="copyright__link" href="#">Developed by wow studio</a>
+        </span>
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__header">Закажите звонок</h2>
+      <b class="modal__header-desc">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</b>
+      <form class="modal__form form" method="POST">
+        <label class="visually-hidden" for="call-name">Введите Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="call-name" required>
+        <label class="visually-hidden" for="call-phone">Введите Ваш номер телефона:</label>
+        <input type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
+        <label class="visually-hidden" for="call-question">Введите Ваш вопрос:</label>
+        <textarea name="question" cols="30" rows="6"
+          placeholder="Ваш вопрос" id="call-question" required></textarea>
+        <button class="button" type="submit">Отправить</button>
+        <label class="form__checkbox">
+          <input class="visually-hidden" id="call-checkbox" type="checkbox" name="agreement" required>
+          <span></span>
+          Я согласен на обработку персональных данных
+        </label>
+      </form>
+      <button class="modal__close" type="button">Закрыть</button>
+    </div>
+  </section>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

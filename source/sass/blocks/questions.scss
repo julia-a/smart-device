@@ -1,0 +1,68 @@
+.questions {
+  color: $white;
+
+  background-color: $blue-100;
+  background-image:
+    url("../../img/desktop/paper-airplane.png"),
+    url("../../img/desktop/triangles-questions.svg");
+  background-position: calc(46% - 292px) 161px, calc(40% + 114px) -60px;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../../img/desktop/paper-airplane@2x.png"),
+      url("../../img/desktop/triangles-questions.svg");
+    background-size: 511px 288px, auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.questions__wrapper {
+  @include container-desktop-tight;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.questions__column {
+  width: 570px;
+  padding-top: 90px;
+  padding-bottom: 113px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 104px;
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    padding-top: 30px;
+  }
+}
+
+.questions__button {
+  width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.questions__checkbox {
+  width: 260px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}

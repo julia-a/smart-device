@@ -12,15 +12,20 @@
 @import "global/container.scss";
 
 // Blocks. Common
-@import "blocks/common/logo.scss";
 @import "blocks/common/button.scss";
 
 // Blocks. Index
 @import "blocks/page-header.scss";
+@import "blocks/common/logo.scss";
 @import "blocks/intro.scss";
 @import "blocks/advantages.scss";
 @import "blocks/about.scss";
+@import "blocks/products.scss";
+@import "blocks/questions.scss";
+@import "blocks/form.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/nav.scss";
+@import "blocks/accordion.scss";
 @import "blocks/contacts.scss";
+@import "blocks/modal.scss";
