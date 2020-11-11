@@ -1,7 +1,9 @@
-<svg width="169" height="437" viewBox="0 0 169 437" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.2" d="M472.851 74.2351L266.128 432.29L59.4052 74.2351L472.851 74.2351Z" stroke="white"/>
-<path opacity="0.2" d="M262.133 223.531L141.316 432.791L20.5001 223.531L262.133 223.531Z" stroke="white"/>
-<circle cx="58.8206" cy="73.6721" r="3.76694" fill="white"/>
-<circle cx="20.3988" cy="223.596" r="3.76694" fill="white"/>
-<circle cx="141.694" cy="433.038" r="3.76694" fill="white"/>
+<svg width="506" height="483" viewBox="0 0 506 483" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.2" d="M472.042 120.352L265.319 478.407L58.5957 120.352L472.042 120.352Z" stroke="white"/>
+<path opacity="0.2" d="M261.323 269.648L140.507 478.908L19.6905 269.648L261.323 269.648Z" stroke="white"/>
+<circle cx="58.0111" cy="119.789" r="3.76694" fill="white"/>
+<circle cx="19.5892" cy="269.713" r="3.76694" fill="white"/>
+<circle cx="140.884" cy="479.155" r="3.76694" fill="white"/>
+<circle cx="265.193" cy="478.401" r="3.76694" fill="white"/>
+<circle cx="472.375" cy="119.789" r="3.76694" fill="white"/>
 </svg>
