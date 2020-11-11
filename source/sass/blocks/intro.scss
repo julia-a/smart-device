@@ -3,15 +3,15 @@
 
   color: $white;
 
-  background-image: url("../img/desktop/background-intro.png");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/desktop/background-intro.png"), url("../img/desktop/triangles-intro.svg");
+  background-position: center top, calc(50% + 406px) 118px;
+  background-size: cover, 671px 641px;
   background-repeat: no-repeat;
   background-color: $black-100;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop/background-intro@2x.png");
+    background-image: url("../img/desktop/background-intro.png"), url("../img/desktop/triangles-intro.svg");
   }
 
   @media (max-width: $tablet-width) {
