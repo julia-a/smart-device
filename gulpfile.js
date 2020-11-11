@@ -99,4 +99,4 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
 
-// ghpages.publish("build");
+ghpages.publish("build");
