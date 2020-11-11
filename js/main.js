@@ -4,7 +4,7 @@
   var link = document.querySelector('.page-header__button');
   var modal = document.querySelector('.modal');
   var close = modal.querySelector('.modal__close');
-  var form = modal.querySelector('.modal__form');
+  var form = document.querySelector('.form');
   var userName = form.querySelector('[name=username]');
   var phone = form.querySelector('[name=phone]');
   var message = form.querySelector('[name=question]');
