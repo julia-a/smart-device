@@ -5,9 +5,8 @@
   width: 100%;
 
   @media (max-width: $mobile-width) {
+    min-width: 290px;
     max-width: 767px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -17,9 +16,8 @@
   width: 100%;
 
   @media (max-width: $mobile-width) {
+    min-width: 290px;
     max-width: 767px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
