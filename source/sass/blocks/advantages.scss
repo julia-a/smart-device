@@ -33,6 +33,11 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 36px;
+
+    &::before {
+      top: 482px;
+      left: 120px;
+    }
   }
 }
 
@@ -129,6 +134,8 @@
     }
 
     &--price {
+      padding-bottom: 24px;
+
       h3 {
         margin-bottom: 17px;
       }
