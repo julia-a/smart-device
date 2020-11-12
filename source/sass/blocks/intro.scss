@@ -3,40 +3,47 @@
 
   color: $white;
 
-  background-image: url("../img/desktop/background-intro.png"), url("../img/desktop/triangles-intro.svg");
-  background-position: center top, calc(50% + 406px) 118px;
-  background-size: cover, 671px 641px;
+  background-image: url("../img/desktop/chip.png"), url("../img/desktop/triangles-intro.svg"), url("../img/desktop/background-intro.png");
+  background-position: calc(50% + 431px) 258px, calc(50% + 406px) 118px, center top;
+  background-size: auto, 671px 641px, cover;
   background-repeat: no-repeat;
   background-color: $black-100;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/desktop/background-intro.png"), url("../img/desktop/triangles-intro.svg");
+    background-image: url("../img/desktop/chip@2x.png"), url("../img/desktop/triangles-intro.svg"), url("../img/desktop/background-intro@2x.png");
+    background-size: 705px 515px, 671px 641px, cover;
   }
 
   @media (max-width: $tablet-width) {
     min-height: 686px;
 
-    background-image: url("../img/tablet/background-intro@2x.png");
+    background-image: url("../img/tablet/chip.png"), url("../img/tablet/triangles-intro.svg"), url("../img/tablet/background-intro.png");
+    background-position: calc(30% + 418px) 113px, calc(30% + 368px) 26px, center top;
+    background-size: auto, 529px 441px, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/tablet/background-intro@2x.png");
+      background-image: url("../img/tablet/chip@2x.png"), url("../img/tablet/triangles-intro.svg"), url("../img/tablet/background-intro@2x.png");
+      background-size: 465px 340px, 529px 441px, cover;
     }
   }
 
   @media (max-width: $mobile-width) {
     min-height: 274px;
-    background-image: url("../img/mobile/background-intro@2x.png");
+
+    background-image: url("../img/mobile/chip.png"), url("../img/mobile/triangles-intro.svg"), url("../img/mobile/background-intro.png");
+    background-position: calc(90% + 9px) 92px, calc(55% + 254px) 7px, center top;
+    background-size: auto, 506px 430px, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/mobile/background-intro@2x.png");
+      background-image: url("../img/mobile/chip@2x.png"), url("../img/mobile/triangles-intro.svg"), url("../img/mobile/background-intro@2x.png");
+      background-size: 301px 220px, 506px 430px, cover;
     }
   }
 }
 
 .intro__wrapper {
   @include container-desktop-wide;
-
   position: relative;
 
   padding-top: 315px;

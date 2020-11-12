@@ -42,8 +42,6 @@
   padding-top: 64px;
   padding-bottom: 55px;
 
-  border-bottom: 1px solid $grey-300;
-
   @media (max-width: $tablet-width) {
     flex-direction: column;
     padding: 0;
@@ -118,7 +116,11 @@
   }
 }
 
-.page-footer__block-copyrigh {
+.page-footer__copyrigh {
+  border-top: 1px solid $grey-300;
+}
+
+.page-footer__copyrigh-wrapper {
   @include container-desktop-wide;
 
   display: flex;

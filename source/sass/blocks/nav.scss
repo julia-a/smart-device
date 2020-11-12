@@ -13,12 +13,10 @@
 .nav__list {
   @include list-reset;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
   width: 490px;
-  height: 100px;
+
+  column-count: 2;
+  column-gap: 70px;
 
   @media (max-width: $tablet-width) {
     width: auto;
@@ -28,6 +26,11 @@
   @media (max-width: $mobile-width) {
     margin-top: 30px;
   }
+}
+
+.nav__item {
+  display: inline-block;
+  width: 100%;
 }
 
 .nav__link {

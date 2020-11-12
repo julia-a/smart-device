@@ -53,16 +53,16 @@ gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.mozjpeg({quality: 85, progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/new/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp())
-    .pipe(gulp.dest("source/img/new"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function () {

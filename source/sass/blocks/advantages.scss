@@ -72,13 +72,6 @@
     line-height: 22px;
   }
 
-  svg {
-    position: absolute;
-    top: 40px;
-
-    fill: $blue-100;
-  }
-
   @media (max-width: $tablet-width) {
     min-height: 232px;
     padding-top: 42px;
@@ -92,67 +85,42 @@
       margin-top: 8px;
       margin-bottom: -5px;
     }
+  }
 
-    svg {
-      top: 22px;
+  @media (max-width: $mobile-width) {
+    min-height: 234px;
+    width: 100%;
+    margin-bottom: 18px;
+    padding-top: 49px;
+    padding-bottom: 29px;
+    padding-left: 22px;
+    padding-right: 16px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
     }
 
-    .advantages__icon {
-      &--suppliers {
-        width: 32px;
-        height: 32px;
-      }
-
-      &--confidentiality {
-        width: 30px;
-        height: 31px;
-      }
-
-      &--price {
-        width: 32px;
-        height: 32px;
-      }
+    &--time {
+      padding-top: 54px;
     }
 
-    @media (max-width: $mobile-width) {
-      min-height: 234px;
-      width: 100%;
-      margin-bottom: 18px;
-      padding-top: 49px;
-      padding-bottom: 29px;
-      padding-left: 22px;
-      padding-right: 16px;
+    &--suppliers {
+      padding-right: 10px;
+      padding-bottom: 34px;
+    }
 
-      &:nth-child(1) {
-        padding-top: 54px;
-      }
-
-      &:nth-child(2) {
-        padding-right: 10px;
-        padding-bottom: 34px;
-      }
-
-      &:nth-child(3) {
-        padding-top: 43px;
-
-        h3 {
-          margin-bottom: 17px;
-        }
-      }
-
-      &:nth-child(4) {
-        h3 {
-          margin-bottom: 17px;
-        }
-      }
+    &--confidentiality {
+      padding-top: 43px;
 
       h3 {
-        font-size: 20px;
-        line-height: 28px;
+        margin-bottom: 17px;
       }
+    }
 
-      svg {
-        top: 24px;
+    &--price {
+      h3 {
+        margin-bottom: 17px;
       }
     }
   }
@@ -168,5 +136,31 @@
 
   svg {
     fill: $white;
+  }
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 40px;
+
+  fill: $blue-100;
+
+  @media (max-width: $tablet-width) {
+    top: 24px;
+
+    &--suppliers {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--confidentiality {
+      width: 30px;
+      height: 26px;
+    }
+
+    &--price {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
