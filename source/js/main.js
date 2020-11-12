@@ -118,7 +118,7 @@
 
   // Scrolling
   var linkNav = document.querySelectorAll('[href^="#"]');
-  var V = 0.5;
+  var v = 0.5;
   for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -132,7 +132,7 @@
           start = time;
         }
         var progress = time - start;
-        var r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+        var r = (t < 0 ? Math.max(w - progress / v, w + t) : Math.min(w + progress / v, w + t));
         window.scrollTo(0, r);
         if (r !== w + t) {
           requestAnimationFrame(step);

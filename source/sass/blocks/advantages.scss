@@ -27,17 +27,12 @@
     margin-top: 54px;
 
     &::before {
-      left: 226px;
+      display: none;
     }
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 36px;
-
-    &::before {
-      top: 482px;
-      left: 120px;
-    }
   }
 }
 
