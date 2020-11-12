@@ -3,16 +3,16 @@
 
   background-color: $blue-100;
   background-image:
-    url("../../img/desktop/paper-airplane.png"),
-    url("../../img/desktop/triangles-questions.svg");
-  background-position: calc(46% - 292px) 161px, calc(40% + 114px) -60px;
+    url("../img/desktop/paper-airplane.png"),
+    url("../img/desktop/triangles-questions.svg");
+  background-position: calc(46% - 306px) 161px, calc(40% + 80px) -60px;
   background-size: auto;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
-      url("../../img/desktop/paper-airplane@2x.png"),
-      url("../../img/desktop/triangles-questions.svg");
+      url("../img/desktop/paper-airplane@2x.png"),
+      url("../img/desktop/triangles-questions.svg");
     background-size: 511px 288px, auto;
   }
 
@@ -37,8 +37,8 @@
     width: 100%;
     padding-top: 80px;
     padding-bottom: 104px;
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   @media (max-width: $mobile-width) {
@@ -52,15 +52,21 @@
 
   @media (max-width: $tablet-width) {
     width: 280px;
+    margin-top: -2px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin-top: 0;
   }
 }
 
 .questions__checkbox {
   width: 260px;
+
+  @media (max-width: $tablet-width) {
+    width: 265px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;

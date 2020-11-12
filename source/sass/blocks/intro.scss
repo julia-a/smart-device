@@ -19,12 +19,12 @@
     min-height: 686px;
 
     background-image: url("../img/tablet/chip.png"), url("../img/tablet/triangles-intro.svg"), url("../img/tablet/background-intro.png");
-    background-position: calc(30% + 418px) 113px, calc(30% + 368px) 26px, center top;
-    background-size: auto, 529px 441px, cover;
+    background-position: calc(30% + 418px) 113px, calc(30% + 308px) 0, center top;
+    background-size: auto, 330px 466px, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/tablet/chip@2x.png"), url("../img/tablet/triangles-intro.svg"), url("../img/tablet/background-intro@2x.png");
-      background-size: 465px 340px, 529px 441px, cover;
+      background-size: 465px 340px, 330px 466px, cover;
     }
   }
 
@@ -47,7 +47,7 @@
   position: relative;
 
   padding-top: 315px;
-  padding-bottom: 60px;
+  padding-bottom: 276px;
 
   h2 {
     width: 720px;
@@ -90,6 +90,7 @@
   @media (max-width: $tablet-width) {
     padding-top: 188px;
     padding-left: 92px;
+    padding-bottom: 60px;
 
     h2 {
       width: auto;
@@ -204,8 +205,8 @@
 
 .intro__scroll-button {
   position: absolute;
-  bottom: -94px;
   left: -20px;
+  bottom: 122px;
 
   padding: 5px;
 

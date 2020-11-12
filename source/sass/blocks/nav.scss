@@ -1,26 +1,31 @@
 .nav {
   @media (max-width: $mobile-width) {
+    border-top: 1px solid $grey-300;
+  }
+}
+
+.nav__wrapper {
+  width: 600px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
     @include container-desktop-wide;
 
     position: relative;
     padding-top: 28px;
     padding-bottom: 28px;
-
-    border-top: 1px solid $grey-300;
   }
 }
 
 .nav__list {
   @include list-reset;
-
-  width: 490px;
-
   column-count: 2;
-  column-gap: 70px;
 
   @media (max-width: $tablet-width) {
-    width: auto;
-    height: auto;
+    column-count: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -31,6 +36,10 @@
 .nav__item {
   display: inline-block;
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .nav__link {

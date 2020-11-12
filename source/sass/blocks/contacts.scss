@@ -1,12 +1,16 @@
 .contacts {
   @media (max-width: $mobile-width) {
+    border-top: 1px solid $grey-300;
+  }
+}
+
+.contacts__wrapper {
+  @media (max-width: $mobile-width) {
     @include container-desktop-wide;
 
     position: relative;
     padding-top: 28px;
     padding-bottom: 28px;
-
-    border-top: 1px solid $grey-300;
   }
 }
 
