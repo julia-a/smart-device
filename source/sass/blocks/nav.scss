@@ -12,11 +12,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    @include container-desktop-wide;
-
     position: relative;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    min-width: 290px;
+    max-width: 767px;
+    padding: 28px 15px;
   }
 }
 
