@@ -35,10 +35,12 @@
 
 .nav__item {
   display: inline-block;
+  vertical-align: middle;
   width: 100%;
 
   @media (max-width: $tablet-width) {
     display: block;
+    vertical-align: baseline;
   }
 }
 
