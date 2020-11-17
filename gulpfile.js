@@ -99,7 +99,7 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
 
-gulp.task("deploy", function() {
-  return gulp.src("build/**/*")
-    .pipe(ghPages());
-});
+// gulp.task("deploy", function() {
+//   return gulp.src("build/**/*")
+//     .pipe(ghPages());
+// });

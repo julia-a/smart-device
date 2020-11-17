@@ -23,28 +23,25 @@
 
 .questions__wrapper {
   @include container-desktop-tight;
-
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .questions__column {
-  width: 570px;
+  margin-left: 600px;
   padding-top: 90px;
   padding-bottom: 113px;
 
   @media (max-width: $tablet-width) {
-    width: 590px;
+    margin-left: 65px;
+    margin-right: 65px;
     padding-top: 80px;
     padding-bottom: 104px;
-    padding-left: 64px;
-    padding-right: 64px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
-    padding: 0;
+    width: auto;
+    margin: 0;
     padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 
