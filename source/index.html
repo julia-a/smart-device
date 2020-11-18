@@ -170,31 +170,21 @@
     <section class="questions" id="questions">
       <div class="questions__wrapper container">
         <div class="questions__column">
-          <form class="form" method="post" action="https://echo.htmlacademy.ru">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <div class="form__block">
-              <label class="form__field">
-                <span class="visually-hidden">Укажите как Вас зовут</span>
-                <input type="text" name="name" placeholder="Имя" minlength="2" required>
-              </label>
-              <label class="form__field">
-                <span class="visually-hidden">Укажите номер телефона</span>
-                <input type="tel" name="phone" placeholder="Телефон" required>
-              </label>
-            </div>
-            <label class="form__field">
-              <span class="visually-hidden">Задайте Ваш вопрос</span>
-              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required></textarea>
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="form questions__form" method="post" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden">Укажите как Вас зовут</label>
+            <input type="text" name="name" placeholder="Имя" minlength="2" required>
+            <label class="visually-hidden">Укажите номер телефона</label>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <label class="visually-hidden">Задайте Ваш вопрос</label>
+            <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required></textarea>
+            <button class="button questions__button" type="submit">Задать вопрос</button>
+            <label class="form__checkbox questions__checkbox">
+              <input class="visually-hidden" type="checkbox" name="personal-data" required>
+              <span></span>
+              Я согласен на обработку персональных данных
             </label>
-            <div class="form__block">
-              <button class="button questions__button" type="submit">Задать вопрос</button>
-              <label class="form__checkbox questions__checkbox">
-                <input class="visually-hidden" type="checkbox" name="personal-data" required>
-                <span></span>
-                Я согласен на обработку персональных данных
-              </label>
-            </div>
           </form>
         </div>
       </div>

@@ -48,7 +48,7 @@
 
   @media (max-width: $tablet-width) {
     margin-top: -20px;
-    margin-bottom: 48px;
+    margin-bottom: 82px;
     padding-left: 212px;
 
     h2 {
@@ -60,7 +60,7 @@
 
     p {
       margin-top: 26px;
-      margin-bottom: 74px;
+      margin-bottom: 40px;
       margin-right: -3px;
     }
 
@@ -137,10 +137,6 @@
     color: $white;
 
     background-color: $blue-100;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-left: 66px;
   }
 
   @media (max-width: $mobile-width) {
