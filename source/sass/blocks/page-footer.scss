@@ -39,6 +39,7 @@
   @include container-desktop-wide;
 
   display: flex;
+  justify-content: space-between;
   padding-top: 64px;
   padding-bottom: 55px;
 
@@ -91,9 +92,7 @@
 
 .page-footer__block-nav {
   display: flex;
-  justify-content: space-between;
   width: 70%;
-  margin-left: auto;
 
   @media (max-width: $tablet-width) {
     @include container-desktop-wide;

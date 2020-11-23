@@ -91,6 +91,19 @@
   }
 }
 
+.modal__block {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    order: 2;
+  }
+}
+
 .modal__checkbox {
   margin-top: 26px;
   padding-top: 8px;

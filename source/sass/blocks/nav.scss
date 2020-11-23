@@ -1,16 +1,14 @@
 .nav {
+  margin-right: auto;
+
   @media (max-width: $mobile-width) {
+    margin-right: 0;
+
     border-top: 1px solid $grey-300;
   }
 }
 
 .nav__wrapper {
-  width: 600px;
-
-  @media (max-width: $tablet-width) {
-    width: auto;
-  }
-
   @media (max-width: $mobile-width) {
     position: relative;
     min-width: 290px;
@@ -21,10 +19,11 @@
 
 .nav__list {
   @include list-reset;
-  column-count: 2;
+
+  display: flex;
 
   @media (max-width: $tablet-width) {
-    column-count: auto;
+    flex-direction: column;
   }
 
   @media (max-width: $mobile-width) {
@@ -33,13 +32,10 @@
 }
 
 .nav__item {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
+  margin-right: 74px;
 
   @media (max-width: $tablet-width) {
-    display: block;
-    vertical-align: baseline;
+    margin-right: 0;
   }
 }
 

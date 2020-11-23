@@ -201,21 +201,25 @@
     <section class="questions" id="questions">
       <div class="questions__wrapper container">
         <div class="questions__column">
-          <h2>Остались вопросы? Задайте их нам!</h2>
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <form class="form questions__form" method="post" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden">Укажите как Вас зовут</label>
-            <input type="text" name="name" placeholder="Имя" minlength="2" required="">
-            <label class="visually-hidden">Укажите номер телефона</label>
-            <input type="tel" name="phone" placeholder="Телефон" required="">
+          <form class="form" method="post" action="https://echo.htmlacademy.ru">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <div class="form__block">
+              <label class="visually-hidden">Укажите как Вас зовут</label>
+              <input type="text" name="name" placeholder="Имя" minlength="2" required="">
+              <label class="visually-hidden">Укажите номер телефона</label>
+              <input type="tel" name="phone" placeholder="Телефон" required="">
+            </div>
             <label class="visually-hidden">Задайте Ваш вопрос</label>
             <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required=""></textarea>
-            <button class="button questions__button" type="submit">Задать вопрос</button>
-            <label class="form__checkbox questions__checkbox">
-              <input class="visually-hidden" type="checkbox" name="personal-data" required="">
-              <span></span>
-              Я согласен на обработку персональных данных
-            </label>
+            <div class="form__block">
+              <label class="form__checkbox questions__checkbox">
+                <input class="visually-hidden" type="checkbox" name="personal-data" required="">
+                <span></span>
+                Я согласен на обработку персональных данных
+              </label>
+              <button class="button questions__button" type="submit">Задать вопрос</button>
+            </div>
           </form>
         </div>
       </div>
@@ -254,13 +258,17 @@
               <h2 class="nav__header">Разделы сайта</h2>
               <button class="page-footer__toggle accordion__toggle" type="button" aria-label="Показать/Скрыть разделы сайта"></button>
               <ul class="nav__list accordion__pane">
-                <li class="nav__item"><a class="nav__link" href="#about">О компании</a> </li>
-                <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
-                <li class="nav__item"><a class="nav__link" href="#production">Производство печатных плат</a></li>
-                <li class="nav__item"><a class="nav__link" href="#installation">Монтаж печатных плат</a></li>
-                <li class="nav__item"><a class="nav__link" href="#accessories">Комплектующие</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+                <div class="nav__list-block">
+                  <li class="nav__item"><a class="nav__link" href="#about">О компании</a> </li>
+                  <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#production">Производство печатных плат</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#installation">Монтаж печатных плат</a></li>
+                </div>
+                <div class="nav__list-block">
+                  <li class="nav__item"><a class="nav__link" href="#accessories">Комплектующие</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+                </div>
               </ul>
             </div>
           </nav>
@@ -295,24 +303,22 @@
       <form class="modal__form form" method="post" action="https://echo.htmlacademy.ru">
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <label>
-          <span class="visually-hidden">Укажите как Вас зовут</span>
-          <input type="text" name="username" placeholder="Имя" minlength="2" required="">
-        </label>
-        <label>
-          <span class="visually-hidden">Укажите номер телефона</span>
+        <div class="form__block modal__block">
+          <label class="visually-hidden">Укажите как Вас зовут</label>
+          <input type="text" name="name" placeholder="Имя" minlength="2" required="">
+          <label class="visually-hidden">Укажите номер телефона</label>
           <input type="tel" name="phone" placeholder="Телефон" required="">
-        </label>
-        <label>
-          <span class="visually-hidden">Задайте Ваш вопрос</span>
-          <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required=""></textarea>
-        </label>
-        <button class="button form__button" type="submit">Отправить</button>
-        <label class="form__checkbox modal__checkbox">
-          <input class="visually-hidden" type="checkbox" name="personal-data" required="">
-          <span></span>
-          Я согласен на обработку персональных данных
-        </label>
+        </div>
+        <label class="visually-hidden">Задайте Ваш вопрос</label>
+        <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" required=""></textarea>
+        <div class="form__block modal__block">
+          <label class="form__checkbox modal__checkbox">
+            <input class="visually-hidden" type="checkbox" name="personal-data" required="">
+            <span></span>
+            Я согласен на обработку персональных данных
+          </label>
+          <button class="button form__button" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </div>
