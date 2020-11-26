@@ -9,7 +9,17 @@
     position: relative;
     min-width: 290px;
     max-width: 767px;
-    padding: 28px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contacts__header {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    z-index: -1;
   }
 }
 
@@ -17,7 +27,8 @@
   @include list-reset;
 
   @media (max-width: $mobile-width) {
-    margin-top: 30px;
+    margin-top: 8px;
+    margin-bottom: 26px;
     padding-right: 20px;
   }
 }

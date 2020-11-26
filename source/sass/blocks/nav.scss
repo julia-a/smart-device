@@ -13,7 +13,17 @@
     position: relative;
     min-width: 290px;
     max-width: 767px;
-    padding: 28px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.nav__header {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    z-index: -1;
   }
 }
 

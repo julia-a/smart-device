@@ -65,6 +65,7 @@
 
 .modal__form {
   h2 {
+    margin-left: -2px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -76,38 +77,73 @@
     line-height: 22px;
   }
 
-  input,
-  textarea {
-    margin-bottom: 30px;
-    padding-top: 12px;
-    padding-bottom: 16px;
-    padding-left: 23px;
+  .form__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-    line-height: 22px;
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0;
+      padding-top: 11px;
+      padding-bottom: 19px;
+      padding-left: 23px;
+
+      line-height: 22px;
+    }
+
+    textarea {
+      height: 104px;
+      margin-bottom: 28px;
+    }
   }
 
-  textarea {
-    height: 104px;
-  }
-}
-
-.modal__block {
-  display: flex;
-  flex-direction: column;
-
-  input {
+  .form__checkbox-wrapper {
     width: 100%;
-  }
-
-  input[type="checkbox"] {
-    order: 2;
+    margin-top: 34px;
+    margin-bottom: -2px;
+    padding-left: 0;
+    padding-right: 20px;
   }
 }
 
 .modal__checkbox {
-  margin-top: 26px;
-  padding-top: 8px;
-  padding-left: 50px;
+  position: relative;
+
+  display: flex;
+  order: 2;
+  align-items: center;
+  padding-left: 45px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  input[type="checkbox"] + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid $white;
+    opacity: 0.4;
+  }
+
+  input[type="checkbox"]:checked + span {
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+  }
+}
+
+.modal__button {
+  margin-top: 1px;
 }
 
 .modal__close {

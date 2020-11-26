@@ -5,7 +5,7 @@
   background-image:
     url("../img/desktop/paper-airplane.png"),
     url("../img/desktop/triangles-questions.svg");
-  background-position: calc(46% - 306px) 161px, calc(40% + 80px) -60px;
+  background-position: calc(46% - 296px) 161px, calc(40% + 106px) -60px;
   background-size: auto;
   background-repeat: no-repeat;
 
@@ -66,7 +66,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin-top: 0;
+    margin-top: 4px;
   }
 }
 

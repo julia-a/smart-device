@@ -1,6 +1,7 @@
 .form {
   h2 {
     margin: 0;
+    margin-left: -5px;
 
     font-family: $roboto-condensed;
     font-size: 36px;
@@ -13,37 +14,8 @@
     margin-bottom: 52px;
   }
 
-  input,
-  textarea {
-    @include interactive-element;
-
-    width: calc(50% - 15px);
-    margin-bottom: 41px;
-    padding: 15px 18px;
-
-    font-size: 16px;
-    line-height: 20px;
-    color: $white;
-
-    background-color: $blue-200;
-    border: none;
-    border-radius: 0;
-
-    &::placeholder {
-      color: $white;
-    }
-  }
-
-  textarea {
-    width: 100%;
-    height: 164px;
-    resize: none;
-  }
-
   @media (max-width: $tablet-width) {
     h2 {
-      margin-left: -5px;
-
       font-size: 32px;
       line-height: 45px;
     }
@@ -51,14 +23,6 @@
     p {
       margin-top: 18px;
       margin-bottom: 56px;
-    }
-
-    input,
-    textarea {
-      padding-top: 10px;
-      padding-bottom: 12px;
-
-      line-height: 28px;
     }
   }
 
@@ -76,11 +40,73 @@
 
       line-height: 22px;
     }
+  }
+}
 
-    input,
+.form__block {
+  display: flex;
+  align-items: center;
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    @include interactive-element;
+
+    width: 50%;
+    margin-right: 30px;
+    margin-bottom: 41px;
+    padding: 15px 18px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+
+    background-color: $blue-200;
+    border: none;
+    border-radius: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 158px;
+    margin-right: 0;
+
+    resize: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      padding-top: 10px;
+      padding-bottom: 13px;
+
+      line-height: 28px;
+    }
+
+    textarea {
+      height: 160px;
+      margin-bottom: 47px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+
+    input[type="text"],
+    input[type="tel"],
     textarea {
       width: 100%;
       margin-bottom: 30px;
+      margin-right: 0;
       padding-top: 14px;
       padding-bottom: 16px;
 
@@ -94,62 +120,67 @@
   }
 }
 
-.form__block {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.form__checkbox-wrapper {
+  order: 2;
+  width: calc(100% - 270px);
+  padding-left: 70px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: $tablet-width) {
+    width: calc(100% - 280px);
+    padding-left: 73px;
+  }
 
   @media (max-width: $mobile-width) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    width: 100%;
+    padding-left: 32px;
+    margin-top: 30px;
+    margin-bottom: 43px;
   }
 }
 
-.form__checkbox {
+.form__input-checkbox {
+  display: none;
+}
+
+.form__label-checkbox {
   position: relative;
 
-  display: flex;
-  order: 2;
-  align-items: center;
-  padding-left: 30px;
+  opacity: 0.7;
 
-  font-size: 14px;
-
-  cursor: pointer;
-
-  input[type="checkbox"] + span {
+  &::before {
+    content: "";
     position: absolute;
-    top: 8px;
-    left: 0;
+    top: 0;
+    left: -32px;
 
     width: 16px;
     height: 16px;
 
+    background-color: transparent;
     border: 1px solid $white;
-    opacity: 0.4;
-  }
+    cursor: pointer;
 
-  input[type="checkbox"]:checked + span {
+    @media (max-width: $tablet-width) {
+      top: 2px;
+
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+.form__input-checkbox:checked + .form__label-checkbox {
+  opacity: 1;
+
+  &::before {
+    content: "";
+
     background-image: url("../img/check.svg");
+    background-position: center center;
+    background-size: 8px 5px;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-  }
-
-  @media (max-width: $tablet-width) {
-    input[type="checkbox"] + span {
-      left: -4px;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 30px;
-    margin-bottom: 44px;
-
-    input[type="checkbox"] + span {
-      top: 0;
-      left: 0;
-    }
   }
 }
