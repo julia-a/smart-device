@@ -5,8 +5,10 @@
   var modal = document.querySelector('.modal');
   var close = modal.querySelector('.modal__close');
   var form = document.querySelector('.form');
+  var modalForm = document.querySelector('.modal__form');
   var userName = form.querySelector('[name=username]');
   var phone = form.querySelector('[name=phone]');
+  var modalPhone =  modalForm.querySelector('[name=phone]');
   var message = form.querySelector('[name=question]');
   var isStorageSupport = true;
   var storage = {};
@@ -83,6 +85,18 @@
     phone.setCustomValidity('Введите корректный номер телефона');
   });
   inputMask.mask(phone);
+
+  // eslint-disable-next-line no-undef
+  var inputMask = new Inputmask('+7 (999) 999-99-99', {
+    oncomplete: function () {
+      modalPhone.setCustomValidity('');
+    }
+  });
+
+  modalPhone.addEventListener('input', function () {
+    modalPhone.setCustomValidity('Введите корректный номер телефона');
+  });
+  inputMask.mask(modalPhone);
 
   // Аccordion
   var accordionItems = document.querySelectorAll('.accordion');

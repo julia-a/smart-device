@@ -27,9 +27,7 @@
   }
 }
 
-.nav__list {
-  @include list-reset;
-
+.nav__list-wrapper {
   display: flex;
 
   @media (max-width: $tablet-width) {
@@ -41,7 +39,8 @@
   }
 }
 
-.nav__item {
+.nav__list {
+  @include list-reset;
   margin-right: 74px;
 
   @media (max-width: $tablet-width) {
